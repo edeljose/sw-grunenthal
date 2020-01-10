@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@Login']);
 Route::get('/home', 'HomeController@index')->name('home');
