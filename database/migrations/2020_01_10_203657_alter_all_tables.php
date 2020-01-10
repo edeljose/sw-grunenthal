@@ -1,0 +1,52 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class AlterAllTables extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        //Foreign keys of challenge datails
+        Schema::table('challenge_details', function ($table) {
+           
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onUpdate('cascade');
+
+            $table->foreign('challenge_id')
+                ->references('id')
+                ->on('challenges')
+                ->onUpdate('cascade');
+        });
+
+        Schema::table('users', function ($table) {
+
+            $table->foreign('state_id')->references('id')->on('states')->onUpdate('cascade');
+            //$table->foreign('rol_id')->references('id')->on('roles')->onUpdate('cascade');
+        });
+        Schema::table('challenges', function ($table) {
+
+            //$table->foreign('state_id')->references('id')->on('states')->onUpdate('cascade');
+           
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('alter_all_tables');
+    }
+}
