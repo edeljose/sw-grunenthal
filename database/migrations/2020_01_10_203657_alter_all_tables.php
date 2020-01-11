@@ -31,11 +31,16 @@ class AlterAllTables extends Migration
         Schema::table('users', function ($table) {
 
             $table->foreign('state_id')->references('id')->on('states')->onUpdate('cascade');
-            //$table->foreign('rol_id')->references('id')->on('roles')->onUpdate('cascade');
+            $table->foreign('rol_id')->references('id')->on('roles')->onUpdate('cascade');
         });
-        Schema::table('challenges', function ($table) {
+        Schema::table('categories', function ($table) {
 
-            //$table->foreign('state_id')->references('id')->on('states')->onUpdate('cascade');
+            $table->foreign('subcategory_id')->references('id')->on('subcategories')->onUpdate('cascade');
+           
+        });
+         Schema::table('questions', function ($table) {
+
+            $table->foreign('answer_id')->references('id')->on('answers')->onUpdate('cascade');
            
         });
     }
