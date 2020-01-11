@@ -12,4 +12,10 @@ class UserController extends Controller
         $users = User::all();
         return \View::make('user/validation', compact('users'));
     }
+
+    public function perfil()
+    {
+        $users = User::all();
+        return \View::make('user/perfil', compact('users'));
+    }
 }

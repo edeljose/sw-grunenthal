@@ -1,0 +1,63 @@
+.box {
+    position: relative;
+    background: #ffffff;
+    border-top: 2px solid #c1c1c1;
+    margin-bottom: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.box-widget {
+    border: none;
+    position: relative;
+}
+.box-widget {
+    border: none!important;
+    position: relative!important;
+}
+.biografia-user {
+    margin-top: 10px;
+}
+
+.biografia-user .biografia-user-header {
+    padding: 20px!important;
+    height: 290px!important;
+    border-top-right-radius: 3px!important;
+    border-top-left-radius: 3px!important;
+}
+.biografia-user .biografia-caja {
+    display: table;
+    width: calc(50% + 20px);
+    height: 290px;
+    padding: 20px;
+    margin: -20px;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+.biografia-user .biografia-caja-header {
+    width: 80%;
+}
+
+.biografia-user .biografia-user-username {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 300;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.biografia-user .biografia-header-right {
+    margin-top: -30px!important;
+}
+
+.biografia-user .biografia-user-image {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -110px;
+}
