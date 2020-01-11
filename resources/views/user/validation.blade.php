@@ -32,7 +32,8 @@
                     </div>
                     <div class="modal-footer">
                         <center>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Ver más</button>
+                        <a class="btn btn-primary text-white"  href="{{ route('route_user_editv',['id' => $modaluser->id]) }}">Aprobar</a>
+                        <a class="btn btn-danger text-white"  href="{{ route('route_user_destroy',['id' => $modaluser->id]) }}">Rechazar</a>
                         </center>
                     </div>
                 </div>

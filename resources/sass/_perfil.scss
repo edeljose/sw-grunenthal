@@ -61,3 +61,35 @@
     left: 50%;
     margin-left: -110px;
 }
+
+.panel {
+    border: 1px solid #F1F1F1!important;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.panel-heading {
+    background-color: #F0f0f0!important;
+    padding: 5px 12px;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+}
