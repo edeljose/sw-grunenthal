@@ -16,6 +16,7 @@ class CreateChallengesTable extends Migration
         Schema::create('challenges', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('challenge_name');
+            $table->bigInteger('category_id')->unsigned();
             $table->timestamps();   
         });
     }

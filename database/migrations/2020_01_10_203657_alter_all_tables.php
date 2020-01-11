@@ -38,9 +38,19 @@ class AlterAllTables extends Migration
             $table->foreign('subcategory_id')->references('id')->on('subcategories')->onUpdate('cascade');
            
         });
+         Schema::table('subcategories', function ($table) {
+
+            $table->foreign('question_id')->references('id')->on('questions')->onUpdate('cascade');
+           
+        });
          Schema::table('questions', function ($table) {
 
             $table->foreign('answer_id')->references('id')->on('answers')->onUpdate('cascade');
+           
+        });
+         Schema::table('challenges', function ($table) {
+
+            $table->foreign('category_id')->references('id')->on('categories')->onUpdate('cascade');
            
         });
     }
