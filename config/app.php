@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Grünenthal'),
 
     /*
     |--------------------------------------------------------------------------
@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Grunenthal\Providers\AppServiceProvider::class,
+        Grunenthal\Providers\AuthServiceProvider::class,
+        // Grunenthal\Providers\BroadcastServiceProvider::class,
+        Grunenthal\Providers\EventServiceProvider::class,
+        Grunenthal\Providers\RouteServiceProvider::class,
 
     ],
 

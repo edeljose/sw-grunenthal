@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Grunenthal;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,14 +13,14 @@ class State extends Model
 
     public function users()
     {
-        return $this->hasMany('App\User');
+        return $this->hasMany('Grunenthal\User');
     }
     public function challenges()
     {
-        return $this->hasMany('App\Challenge');
+        return $this->hasMany('Grunenthal\Challenge');
     }
     public function questions()
     {
-        return $this->hasMany('App\Question');
+        return $this->hasMany('Grunenthal\Question');
     }
 }

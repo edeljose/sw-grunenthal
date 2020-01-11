@@ -1,15 +1,23 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Grunenthal\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+use Illuminate\Support\Facades\View;
+
+use Illuminate\Support\Facades\Auth;
+
+use Grunenthal\User;
 
 class UserController extends Controller
 {
     public function index()
     {
         $users = User::all();
-        return \View::make('user/validation', compact('users'));
+        return View::make('user/validation', compact('users'));
     }
+    
 }

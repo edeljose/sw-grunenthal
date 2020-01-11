@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Grunenthal;
 
 use Illuminate\Database\Eloquent\Model;
 
