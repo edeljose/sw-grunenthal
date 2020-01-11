@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('validation', 'UserController@index')->name('validate_user');
+Route::get('perfil', 'UserController@perfil')->name('perfil');
 Route::get('/home', 'HomeController@index')->name('home');

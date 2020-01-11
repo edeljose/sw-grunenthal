@@ -54,14 +54,16 @@
                             <li><a class="nav-link" href="{{ url('validation') }}">Validation</a></li>
                         @endif  
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" style="position:relative; padding-left:50px;" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <img src="{{ URL::to('/')}}/images/{{ Auth::user()->image}}" style="width:32px; height:32px; position:absolute; top:10px; left:10px; border-radius:50%;">
                                     {{ Auth::user()->names }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('perfil') }}"><i class="fa fa-user"></i> Perfil</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt"></i>
                                         {{ __('Salir') }}
                                     </a>
 
