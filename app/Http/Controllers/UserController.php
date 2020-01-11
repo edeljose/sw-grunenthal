@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\View;
 
 use Illuminate\Support\Facades\Auth;
 
-use Grunenthal\User;
+use Grunenthal\Models\User;
 
 class UserController extends Controller
 {

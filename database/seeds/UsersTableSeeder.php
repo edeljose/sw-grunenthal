@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
-use App\User;
+use Grunenthal\Models\User;
 use Illuminate\Support\Facades\Hash;
 
 class UsersTableSeeder extends Seeder
