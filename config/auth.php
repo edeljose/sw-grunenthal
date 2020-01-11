@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Grunenthal\User::class,
+            'model' => Grunenthal\Models\User::class,
         ],
 
         // 'users' => [

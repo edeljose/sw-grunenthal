@@ -1,10 +1,10 @@
 <?php
 
-namespace Grunenthal;
+namespace Grunenthal\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Answer extends Model
+class Question extends Model
 {
     //
 }

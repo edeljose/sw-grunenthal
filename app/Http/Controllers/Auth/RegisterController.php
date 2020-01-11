@@ -2,7 +2,7 @@
 
 namespace Grunenthal\Http\Controllers\Auth;
 
-use Grunenthal\User;
+use Grunenthal\Models\User;
 use Grunenthal\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -63,7 +63,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \Grunenthal\User
+     * @return \Grunenthal\Models\User
      */
     protected function create(array $data)
     {

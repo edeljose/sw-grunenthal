@@ -1,6 +1,6 @@
 <?php
 
-namespace Grunenthal;
+namespace Grunenthal\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,14 +13,14 @@ class State extends Model
 
     public function users()
     {
-        return $this->hasMany('Grunenthal\User');
+        return $this->hasMany('Grunenthal\Models\User');
     }
     public function challenges()
     {
-        return $this->hasMany('Grunenthal\Challenge');
+        return $this->hasMany('Grunenthal\Models\Challenge');
     }
     public function questions()
     {
-        return $this->hasMany('Grunenthal\Question');
+        return $this->hasMany('Grunenthal\Models\Question');
     }
 }
