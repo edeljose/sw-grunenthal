@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
                 $user->names = $faker->name;
                 $user->surnames = $faker->name;
                 $user->age = $faker->numberBetween($min = 19, $max = 65);
-                $user->image = $faker->name;
+                $user->image = "433678019.png";
                 $user->email = $faker->email;
                 $user->password = Hash::make('test123');
                 $user->rol_id = $faker->numberBetween($min = 1, $max = 2);

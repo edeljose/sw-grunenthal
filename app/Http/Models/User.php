@@ -20,7 +20,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'names', 'surnames', 'age', 'image', 'email', 'password ','state_id', 'rol_id',
+        'names', 'surnames', 'age', 'image', 'email', 'password' ,'state_id', 'rol_id',
     ];
 
     /**
@@ -42,10 +42,10 @@ class User extends Authenticatable
     ];
     public function state()
     {
-        return $this->belongsTo('Grunenthal\State');
+        return $this->belongsTo('Grunenthal\Models\State');
     }
     public function role()
     {
-        return $this->belongsTo('Grunenthal\Role');
+        return $this->belongsTo('Grunenthal\Models\Role');
     }
 }
